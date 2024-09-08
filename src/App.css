@@ -1,0 +1,131 @@
+/* Container for the whole page */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: #1d1f21; /* Dark background */
+  color: #d5d8dc; /* Light gray text for accessibility */
+  font-family: 'Arial', sans-serif;
+  font-size: 1.75rem; /* Size of text outside the navbar */
+  background-color: #050029;
+  background-image: url("./assets/asfalt-light.png");
+}
+
+/* Responsive Navbar */
+.navbar {
+  width: 100%;
+  background-color: rgb(2, 21, 90); /* Slightly lighter background for the navbar */
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: #d5d8dc;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+/* Default hover effect for links */
+.navbar a:hover {
+  color: #88c0d0; /* Change text color on hover */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Custom cursor for specific links */
+.navbar a[href="#data-analysis"]:hover {
+  cursor: url('./assets/emoji_chart.png'), auto; /* Correct path */
+}
+
+.navbar a[href="#programming"]:hover {
+  cursor: url('./assets/emoji_floppy.png'), auto; /* Correct path */
+}
+
+.navbar a[href="#music"]:hover {
+  cursor: url('./assets/emoji_music.png'), auto; /* Correct path */
+}
+
+/* Section styling */
+.section {
+  padding: 2rem;
+}
+
+/* Home section styling */
+#home {
+  display: block;
+  text-align: left;
+  padding: 2rem;
+  max-width: 1000px; /* Limit the width of the content on large screens */
+  margin: 0 auto; /* Center the content on large screens */
+}
+
+h1 {
+  letter-spacing: 0.05em;
+}
+
+/* Styling for the headshot image */
+.headshot img {
+  float: right; /* Floats the image to the right */
+  margin-left: 1rem; /* Space between image and text */
+  margin-bottom: 1rem; /* Space below the image */
+  width: 300px; /* Set width for square image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25%; /* Optional: makes the image round */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow for the image */
+}
+
+/* About me text styling */
+.about-me {
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+/* Main content styling */
+main {
+  flex: 1;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+  #home {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .headshot img {
+    float: none; /* Remove the float on smaller screens */
+    display: block;
+    margin: 0 auto 1rem auto; /* Center the image on smaller screens */
+    width: 150px; /* Resize the image for smaller screens */
+    height: auto;
+  }
+
+  .about-me {
+    text-align: center; /* Center the text on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headshot img {
+    width: 100px; /* Shrink the image further for very small screens */
+    height: auto;
+  }
+}

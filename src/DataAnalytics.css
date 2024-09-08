@@ -1,0 +1,89 @@
+/* DataAnalytics.css */
+
+.data-analytics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  text-align: center; /* Ensure all child elements are centered */
+}
+
+.data-analytics .section {
+  width: 100%;
+  max-width: 2000px; /* Adjust as needed */
+  margin: 0 auto; /* Ensure the section itself is centered */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure content is aligned in the center */
+}
+
+.data-analytics h1 {
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center; /* Center the h1 text */
+  display: inline-block; /* Prevent external layout influences */
+  justify-content: center; /* Extra centering for flex containers */
+}
+
+.data-analytics h2, .data-analytics h3 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.data-analytics h2 {
+  font-size: 50px;
+}
+
+.data-analytics h3 {
+  font-size: 40px;
+}
+
+.data-analytics p {
+  text-align: center;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.data-analytics .project {
+  width: 100%;
+  max-width: 1000px; /* Ensure each project section does not exceed the maximum width */
+  margin: 20px 0;
+  text-align: center; /* Center text within each project */
+}
+
+.data-analytics .tableau-embed-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the Tableau embed horizontally */
+  margin: 20px 0;
+}
+
+.data-analytics .tableau-embed-container > div {
+  width: 100%;
+  max-width: 1000px; /* Ensure Tableau embed does not exceed this width */
+  height: 600px; /* Adjust height as needed */
+}
+
+/* General styles for the hyperlink */
+.data-analytics .project h2 a {
+  color: #ffffff; /* Link color */
+  text-decoration: none; /* No underline by default */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover state */
+.data-analytics .project h2 a:hover {
+  color: #0056b3 !important; /* Use !important to override any other conflicting styles */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Visited state to prevent purple color */
+.data-analytics .project h2 a:visited {
+  color: #ffffff !important; /* Keep the color consistent after visiting */
+}
