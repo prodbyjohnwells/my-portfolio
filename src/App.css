@@ -19,6 +19,7 @@ html, body {
   min-height: 100vh;
   color: #cacaca; /* Light gray text for accessibility */
   font-size: 1.75rem; /* Size of text outside the navbar */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Parallax background styling */

@@ -22,7 +22,7 @@
       padding: 10px;
       position: fixed;
       bottom: 0;
-      width: auto;
+      width: 100%; /* Ensure full width */
       font-size: 14px;
       z-index: 1000; /* Ensure it’s above other content */
     }
@@ -30,10 +30,8 @@
 
 </head>
 <body>
-  <div id="root"></div>
-  <script src="/index.js"></script>
-  <script src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
   <div class="navbar">
+    <button class="menu-toggle">&#9776;</button> <!-- Menu toggle button for mobile -->
     <ul>
       <li><a href="#home" onclick="loadSection('home')">Home</a></li>
       <li><a href="#data-analytics" onclick="loadSection('data-analytics')">Data Analytics</a></li>
@@ -42,8 +40,10 @@
       <li><a href="#contact" onclick="loadSection('contact')">Contact</a></li>
     </ul>
   </div>
-  <div id="content"></div>
+  <div id="root"></div>
+  <script src="/index.js"></script>
   <script src="scripts.js"></script>
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
 
   <!-- Footer -->
   <footer class="footer">

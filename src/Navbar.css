@@ -3,6 +3,10 @@
     width: 100%;
     background-color: rgb(2, 21, 90);
     background-image: url("./assets/asfalt-light.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
     color: #cacaca;
     padding: 1rem;
     font-weight: bold;
@@ -11,10 +15,11 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Adjust to space items */
     align-items: center;
 }
 
+/* Navbar menu styling */
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -51,38 +56,43 @@
     color: #d5d8dc;
 }
 
-/* Navbar menu styling */
-.navbar-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.navbar-menu.open {
-    display: flex;
-}
-
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-    .navbar-menu {
-        display: none;
+    .navbar ul {
+        display: none; /* Hide menu items on smaller screens */
         flex-direction: column;
         width: 100%;
         background-color: rgb(2, 21, 90);
     }
 
-    .navbar-menu.open {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .navbar ul.open {
+        display: flex; /* Show menu items when 'open' class is added */
     }
 
-    .navbar-menu li {
+    .navbar li {
         margin: 1rem 0;
         text-align: center;
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show menu toggle button */
     }
+}
+
+/* Ensure there are no unintended elements causing extra space or duplication */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #cacaca; /* Light gray text for accessibility */
+    font-size: 1.75rem; /* Size of text outside the navbar */
 }

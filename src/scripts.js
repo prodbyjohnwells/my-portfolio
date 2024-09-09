@@ -1,7 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Load default section
-    loadSection('home');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbarMenu = document.querySelector('.navbar ul');
+
+    menuToggle.addEventListener('click', function () {
+        navbarMenu.classList.toggle('open');
+    });
 });
+
 
 const sections = {
     'home': `
