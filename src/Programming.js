@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: 'Little Lemon Booking Website',
-    description: "This project was developed as part of Meta's Coursera Front-End Development course...",
+    description: "This project was developed as part of Meta's Coursera Front-End Development course, representing the capstone of the Front-End Development Track.",
     technologies: ['React', 'JavaScript', 'CSS'],
     githubLink: 'https://github.com/prodbyjohnwells/frontend-dev-little-lemon',
     demoUrl: 'https://prodbyjohnwells.github.io/frontend-dev-little-lemon/',

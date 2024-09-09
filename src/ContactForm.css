@@ -11,7 +11,7 @@
 
   .contact-form-container iframe {
     width: 100%; /* Ensures responsiveness */
-    max-width: 8000px; /* Ensures the form doesn’t exceed this width */
+    max-width: 100%; /* Ensures the form doesn’t exceed this width */
     height: 1000px; /* Adjust height as needed */
     border: none;
   }
@@ -20,7 +20,7 @@
     display: inline-block; /* Enables flexbox layout */
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255,255,255,.85)); /* Linear gradient background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(255,255,255,.85)); /* Linear gradient background */
     padding: 5px; /* Adds padding around the background */
     width: 800px; /* Ensures full width */
     border-radius: 2%;

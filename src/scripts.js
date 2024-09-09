@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const navbarMenu = document.querySelector('.navbar-menu');
 
@@ -67,3 +67,4 @@ function loadSection(sectionId) {
         link.classList.toggle('active', link.getAttribute('href').substring(1) === sectionId);
     });
 }
+*/

@@ -9,7 +9,7 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255,0,100,.85)); /* Linear gradient background from transparent to red */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(100,0,50,.85)); /* Linear gradient background from transparent to red */
   border-radius: 10px; /* Optional: rounded corners for the container */
 }
 
@@ -51,7 +51,7 @@
 .data-analytics .project {
   width: 100%;
   max-width: 1000px; /* Ensure each project section does not exceed the maximum width */
-  margin: 20px 0;
+  margin: 40px 0;
   text-align: center; /* Center text within each project */
 }
 
@@ -78,10 +78,67 @@
 /* Hover state */
 .data-analytics .project h2 a:hover {
   color: #0056b3 !important; /* Use !important to override any other conflicting styles */
+  transform: scale(1.05); /* Slightly scales the text */
   text-decoration: underline; /* Adds underline on hover */
 }
 
 /* Visited state to prevent purple color */
 .data-analytics .project h2 a:visited {
   color: #cacaca !important; /* Keep the color consistent after visiting */
+}
+
+.data-analytics h1, .data-analytics h2, .data-analytics h3 {
+  transition: color 0.3s ease;
+}
+
+.data-analytics h1, .data-analytics h2, .data-analytics h3, .data-analytics p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better readability */
+}
+
+.data-analytics h1:hover, .data-analytics h2:hover, .data-analytics h3:hover {
+  color: #0056b3; /* Optional: Make headings interactive too */
+}
+
+@media (max-width: 768px) {
+  .data-analytics h1 {
+    font-size: 40px;
+  }
+
+  .data-analytics h2 {
+    font-size: 30px;
+  }
+
+  .data-analytics h3 {
+    font-size: 25px;
+  }
+
+  .data-analytics p {
+    font-size: 20px;
+  }
+
+  .data-analytics .project {
+    max-width: 90%; /* Adjust project container size for smaller screens */
+  }
+
+  .data-analytics .tableau-embed-container > div {
+    height: 400px; /* Decrease Tableau embed height for mobile screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .data-analytics {
+    padding: 10px;
+  }
+
+  .data-analytics h1, .data-analytics h2, .data-analytics h3 {
+    font-size: 20px; /* Make headers smaller for very small screens */
+  }
+
+  .data-analytics p {
+    font-size: 16px;
+  }
+
+  .data-analytics .tableau-embed-container > div {
+    height: 300px; /* Further decrease Tableau embed height */
+  }
 }

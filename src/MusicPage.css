@@ -4,6 +4,8 @@
   flex-direction: column; /* Change to column layout to stack items vertically */
   align-items: center; /* Center items horizontally */
   padding: 20px; /* Adjust padding as needed */
+  max-width: 1200px;
+  margin: 0 auto; /* Center content horizontally */
 }
 
 .music-page-content {
@@ -23,7 +25,7 @@
 .artist-biography {
   padding: 0 20px; /* Adjust padding as needed */
   text-align: left; /* Align text to the left */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0,100,255,.85)); /* Linear gradient background from transparent to red */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0,100,255,.85)); /* Linear gradient background from transparent to blue */
   border-radius: 2%;
 }
 
@@ -49,9 +51,26 @@
   height: auto;
 }
 
+.streaming-buttons img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  transition: transform 0.3s ease;
+}
+
 /* Responsive Design for larger screens */
 @media (min-width: 768px) {
   .streaming-buttons img {
     width: 40px; /* Larger size for larger screens */
+  }
+  .artist-biography h1 {
+    font-size: 24px; /* Scale down heading */
+  }
+  .artist-biography p {
+    font-size: 16px; /* Scale down paragraph text */
+  }
+}
+
+@media (min-width: 1024px) {
+  .artist-biography {
+    padding: 0 40px;
   }
 }

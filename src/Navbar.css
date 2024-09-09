@@ -7,7 +7,7 @@
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    color: #cacaca;
+    color: #b0b0b0;
     padding: 1rem;
     font-weight: bold;
     position: sticky;
@@ -17,6 +17,13 @@
     display: flex;
     justify-content: center; /* Adjust to space items */
     align-items: center;
+    height: 60px;
+}
+
+.navbar-menu a.active {
+    color: #88c0d0; /* Similar to hover color */
+    border-bottom: 2px solid #88c0d0;
+    transition: border-bottom 0.3s ease-in-out;
 }
 
 /* Navbar menu styling */
@@ -56,26 +63,33 @@
     color: #d5d8dc;
 }
 
+.menu-toggle:hover {
+    color: #88c0d0;
+    transition: color 0.3s ease;
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .navbar-menu {
-        display: none; /* Hide menu items on smaller screens */
-        flex-direction: column;
-        width: 100%;
-        background-color: rgb(2, 21, 90);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
     }
 
     .navbar-menu.open {
-        display: flex; /* Show menu items when 'open' class is added */
+        max-height: max-content; /* Adjust max-height based on content */
     }
+
 
     .navbar-menu li {
         margin: 1rem 0;
         text-align: center;
+        padding: 15px 0;
     }
 
     .menu-toggle {
-        display: block; /* Show menu toggle button */
+        margin-left: auto;
+        padding: 0.5rem;
     }
 }
 
