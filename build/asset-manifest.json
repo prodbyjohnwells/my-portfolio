@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.8cb49d5a.css",
+    "main.js": "/my-portfolio/static/js/main.7a56adc8.js",
+    "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/asfalt-light.png": "/my-portfolio/static/media/asfalt-light.0dc0248a94662fa2129c.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.8cb49d5a.css.map": "/my-portfolio/static/css/main.8cb49d5a.css.map",
+    "main.7a56adc8.js.map": "/my-portfolio/static/js/main.7a56adc8.js.map",
+    "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cb49d5a.css",
+    "static/js/main.7a56adc8.js"
+  ]
+}
