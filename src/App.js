@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar'; // Import the Navbar component
 import DataAnalytics from './DataAnalytics';
 import Programming from './Programming';
 import MusicPage from './MusicPage';
 import ContactForm from './ContactForm';
 import './App.css';
 
-
-// Import cursor images
-import dataAnalytics from './assets/emoji_chart.png';
-import programmingCursor from './assets/emoji_floppy.png';
-import musicCursor from './assets/emoji_music.png';
-
 const sections = {
   home: (
     <div id="home" className="section active">
       <div className="headshot">
-      <img src={`${process.env.PUBLIC_URL}/Professional_Headshot.jpg`} alt="Headshot" />
+        <img src={`${process.env.PUBLIC_URL}/Professional_Headshot.jpg`} alt="Headshot" />
       </div>
       <div className="about-me">
         <h1>About Me</h1>
@@ -42,7 +37,6 @@ const sections = {
       <DataAnalytics/>
     </div>
   ),
-  // Add other sections here
   programming: (
     <div id="programming" className="section">
       <Programming/>
@@ -65,39 +59,7 @@ function App() {
 
   return (
     <div className="container">
-      <nav className="navbar">
-        <ul>
-          <li><a href="#home" onClick={() => setActiveSection('home')}>Home</a></li>
-          <li>
-            <a
-              href="#data-analytics"
-              onClick={() => setActiveSection('data-analytics')}
-              style={{ cursor: `url(${dataAnalytics}), auto` }}
-            >
-              Data Analysis
-            </a>
-          </li>
-          <li>
-            <a
-              href="#programming"
-              onClick={() => setActiveSection('programming')}
-              style={{ cursor: `url(${programmingCursor}), auto` }}
-            >
-              Programming
-            </a>
-          </li>
-          <li>
-            <a
-              href="#music"
-              onClick={() => setActiveSection('music')}
-              style={{ cursor: `url(${musicCursor}), auto` }}
-            >
-              Music
-            </a>
-          </li>
-          <li><a href="#contact" onClick={() => setActiveSection('contact')}>Contact</a></li>
-        </ul>
-      </nav>
+      <Navbar setActiveSection={setActiveSection} />
       <main id="content">
         {sections[activeSection]}
       </main>

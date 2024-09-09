@@ -1,16 +1,55 @@
 /* MusicPage.css */
 .music-page {
-    padding: 20px;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column; /* Change to column layout to stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Adjust padding as needed */
+}
 
-  .soundcloud-embed {
-    margin: 0 auto;
-    max-width: 600px; /* Adjust this width as needed */
-  }
+.music-page-content {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  justify-content: center;
+  gap: 20px; /* Space between the two sections */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  max-width: 100%; /* Ensure content scales properly */
+}
 
-  .soundcloud-embed iframe {
-    border: none;
-    width: 100%; /* Ensures iframe scales within the max-width container */
-    height: 400px; /* Adjust the height if needed */
+.soundcloud-embed, .artist-biography {
+  flex: 1; /* Ensure both sections take up equal space */
+  max-width: 100%; /* Adjust to fit smaller screens */
+}
+
+.artist-biography {
+  padding: 0 20px; /* Adjust padding as needed */
+  text-align: left; /* Align text to the left */
+}
+
+.streaming-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Space above the buttons */
+}
+
+.streaming-buttons h2 {
+  margin-right: 15px; /* Space between text and icons */
+}
+
+.streaming-buttons a {
+  display: inline-flex;
+  align-items: center; /* Center icons vertically within links */
+}
+
+.streaming-buttons img {
+  width: 32px; /* Ensure all icons are the same size */
+  height: auto;
+}
+
+/* Responsive Design for larger screens */
+@media (min-width: 768px) {
+  .streaming-buttons img {
+    width: 40px; /* Larger size for larger screens */
   }
+}

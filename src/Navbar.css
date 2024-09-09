@@ -1,0 +1,98 @@
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: rgb(2, 21, 90); /* Slightly lighter background for the navbar */
+    color: #cacaca;
+    padding: 1rem;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the navbar content */
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the list items */
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: #d5d8dc;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+/* Default hover effect for links */
+.navbar a:hover {
+    color: #88c0d0; /* Change text color on hover */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Custom cursor for specific links */
+.navbar a[href="#data-analytics"]:hover {
+    cursor: url('./assets/emoji_chart.png'), auto; /* Correct path */
+}
+
+.navbar a[href="#programming"]:hover {
+    cursor: url('./assets/emoji_floppy.png'), auto; /* Correct path */
+}
+
+.navbar a[href="#music"]:hover {
+    cursor: url('./assets/emoji_music.png'), auto; /* Correct path */
+}
+
+/* Menu toggle button styling */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #d5d8dc;
+}
+
+/* Navbar menu styling */
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Ensure items are vertically centered */
+}
+
+.navbar-menu.open {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(2, 21, 90);
+    }
+
+    .navbar-menu.open {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

@@ -1,11 +1,14 @@
+/* App.css */
 /* Container for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* background-color: #1d1f21; /* Dark background */
   color: #cacaca; /* Light gray text for accessibility */
-  font-family: 'Raleway', sans-serif;
   font-size: 1.75rem; /* Size of text outside the navbar */
   font-weight: 700;
   background-color: #1A1A1A;
@@ -49,19 +52,6 @@
   color: #88c0d0; /* Change text color on hover */
   cursor: pointer;
   transition: color 0.3s ease;
-}
-
-/* Custom cursor for specific links */
-.navbar a[href="#data-analysis"]:hover {
-  cursor: url('./assets/emoji_chart.png'), auto; /* Correct path */
-}
-
-.navbar a[href="#programming"]:hover {
-  cursor: url('./assets/emoji_floppy.png'), auto; /* Correct path */
-}
-
-.navbar a[href="#music"]:hover {
-  cursor: url('./assets/emoji_music.png'), auto; /* Correct path */
 }
 
 /* Section styling */
