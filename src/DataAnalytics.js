@@ -15,8 +15,8 @@ const DataAnalytics = () => {
             </a>
           </h2>
           <p>
-          This visual explores flood patterns across Texas’s nine largest counties from 2019 to 2023, 
-          focusing on the frequency and impact of floods, flash floods, and coastal floods. 
+          This visual explores flood patterns across Texas’s nine largest counties from 2019 to 2023,
+          focusing on the frequency and impact of floods, flash floods, and coastal floods.
           Our goal is to identify trends, assess damage, and develop strategies for better flood management and preparedness.
           </p>
           <TableauEmbed

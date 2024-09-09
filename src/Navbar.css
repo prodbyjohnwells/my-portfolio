@@ -1,7 +1,8 @@
 /* Navbar styling */
 .navbar {
     width: 100%;
-    background-color: rgb(2, 21, 90); /* Slightly lighter background for the navbar */
+    background-color: rgb(2, 21, 90);
+    background-image: url("./assets/asfalt-light.png");
     color: #cacaca;
     padding: 1rem;
     font-weight: bold;
@@ -10,7 +11,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Center the navbar content */
+    justify-content: center;
     align-items: center;
 }
 
@@ -19,7 +20,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Center the list items */
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -34,24 +35,10 @@
     position: relative;
 }
 
-/* Default hover effect for links */
 .navbar a:hover {
-    color: #88c0d0; /* Change text color on hover */
+    color: #88c0d0;
     cursor: pointer;
     transition: color 0.3s ease;
-}
-
-/* Custom cursor for specific links */
-.navbar a[href="#data-analytics"]:hover {
-    cursor: url('./assets/emoji_chart.png'), auto; /* Correct path */
-}
-
-.navbar a[href="#programming"]:hover {
-    cursor: url('./assets/emoji_floppy.png'), auto; /* Correct path */
-}
-
-.navbar a[href="#music"]:hover {
-    cursor: url('./assets/emoji_music.png'), auto; /* Correct path */
 }
 
 /* Menu toggle button styling */
@@ -68,13 +55,14 @@
 .navbar-menu {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Ensure items are vertically centered */
+    align-items: center;
 }
 
 .navbar-menu.open {
     display: flex;
 }
 
+/* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .navbar-menu {
         display: none;
@@ -85,6 +73,8 @@
 
     .navbar-menu.open {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navbar-menu li {

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar'; // Import the Navbar component
+import Navbar from './Navbar';
 import DataAnalytics from './DataAnalytics';
 import Programming from './Programming';
 import MusicPage from './MusicPage';
 import ContactForm from './ContactForm';
 import './App.css';
+import './styles.css';
 
 const sections = {
   home: (
@@ -58,11 +59,13 @@ function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   return (
-    <div className="container">
+    <div className="parallax">
       <Navbar setActiveSection={setActiveSection} />
-      <main id="content">
-        {sections[activeSection]}
-      </main>
+      <div className="container">
+        <main id="content">
+          {sections[activeSection]}
+        </main>
+      </div>
     </div>
   );
 }

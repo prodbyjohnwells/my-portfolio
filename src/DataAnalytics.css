@@ -9,7 +9,7 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6); /* Light background with transparency */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255,0,100,.85)); /* Linear gradient background from transparent to red */
   border-radius: 10px; /* Optional: rounded corners for the container */
 }
 

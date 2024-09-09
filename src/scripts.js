@@ -3,25 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSection('home');
 });
 
-function loadSection(sectionId) {
-    // Hide all sections
-    document.querySelectorAll('.section').forEach(section => {
-        section.classList.remove('active');
-    });
-
-    // Show the selected section
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.classList.add('active');
-    }
-}
-
-// Adding the HTML content dynamically
 const sections = {
     'home': `
         <div id="home" class="section active">
             <div class="headshot">
-                <img src="path/to/your-headshot.jpg" alt="Headshot">
+                <img src="/Professional_Headshot.jpg" alt="Headshot">
             </div>
             <div class="about-me">
                 <h1>About Me</h1>
@@ -55,9 +41,22 @@ const sections = {
     `
 };
 
-// Load the section content dynamically
+// Load the section content dynamically and manage visibility
 function loadSection(sectionId) {
+    // Update the content
     document.getElementById('content').innerHTML = sections[sectionId];
+
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+    });
+
+    // Show the selected section
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.classList.add('active');
+    }
+
     // Update active class on navigation
     document.querySelectorAll('.navbar a').forEach(link => {
         link.classList.toggle('active', link.getAttribute('href').substring(1) === sectionId);

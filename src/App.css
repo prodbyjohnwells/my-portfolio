@@ -4,59 +4,48 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0; /* Ensure there is no default margin */
+}
+
+/* Ensure the body and html take full height */
+html, body {
+  height: 100%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   color: #cacaca; /* Light gray text for accessibility */
   font-size: 1.75rem; /* Size of text outside the navbar */
-  font-weight: 700;
-  background-color: #1A1A1A;
-  background-image: url("./assets/asfalt-light.png");
 }
 
-/* Responsive Navbar */
-.navbar {
-  width: 100%;
-  background-color: rgb(2, 21, 90); /* Slightly lighter background for the navbar */
-  color: #cacaca;
-  padding: 1rem;
-  font-weight: bold;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar li {
-  margin: 0 1rem;
-}
-
-.navbar a {
-  color: #d5d8dc;
-  text-decoration: none;
-  font-size: 1.5rem;
+/* Parallax background styling */
+.parallax {
+  /* Ensure this container covers the entire viewport */
   position: relative;
+  overflow: hidden;
 }
 
-/* Default hover effect for links */
-.navbar a:hover {
-  color: #88c0d0; /* Change text color on hover */
-  cursor: pointer;
-  transition: color 0.3s ease;
+.parallax::before {
+  /* Parallax effect */
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./austin_backdrop.jpg') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  transform: translateZ(0);
 }
 
 /* Section styling */
 .section {
   padding: 2rem;
+  margin-bottom: 2rem; /* Add extra margin to sections to allow scrolling */
 }
 
 /* Home section styling */
@@ -87,7 +76,7 @@ h1 {
 .about-me {
   max-width: 100%;
   line-height: 1.6;
-  background-color: rgba(0, 0, 0, 0.5); /* Light background with transparency */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(100,0,255,.85)); /* Linear gradient background from transparent to red */
   padding: 1rem; /* Add some padding for better readability */
   border-radius: 10px; /* Optional: rounded corners for the background */
 }
