@@ -19,6 +19,7 @@ html, body {
   min-height: 100vh;
   color: #cacaca; /* Light gray text for accessibility */
   font-size: 1.75rem; /* Size of text outside the navbar */
+  max-width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -104,18 +105,15 @@ main {
     display: block;
     margin: 0 auto 1rem auto; /* Center the image on smaller screens */
     width: 150px; /* Resize the image for smaller screens */
-    height: auto;
   }
 
   .about-me {
     text-align: center; /* Center the text on smaller screens */
-    background-size: cover; /* Ensure proper scaling on smaller screens */
   }
 }
 
 @media screen and (max-width: 480px) {
   .headshot img {
     width: 100px; /* Shrink the image further for very small screens */
-    height: auto;
   }
 }

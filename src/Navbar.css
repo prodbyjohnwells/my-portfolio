@@ -20,7 +20,7 @@
 }
 
 /* Navbar menu styling */
-.navbar ul {
+.navbar-menu {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -29,18 +29,18 @@
     flex-wrap: wrap;
 }
 
-.navbar li {
+.navbar-menu li {
     margin: 0 1rem;
 }
 
-.navbar a {
+.navbar-menu a {
     color: #d5d8dc;
     text-decoration: none;
     font-size: 1.5rem;
     position: relative;
 }
 
-.navbar a:hover {
+.navbar-menu a:hover {
     color: #88c0d0;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -58,18 +58,18 @@
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-    .navbar ul {
+    .navbar-menu {
         display: none; /* Hide menu items on smaller screens */
         flex-direction: column;
         width: 100%;
         background-color: rgb(2, 21, 90);
     }
 
-    .navbar ul.open {
+    .navbar-menu.open {
         display: flex; /* Show menu items when 'open' class is added */
     }
 
-    .navbar li {
+    .navbar-menu li {
         margin: 1rem 0;
         text-align: center;
     }
