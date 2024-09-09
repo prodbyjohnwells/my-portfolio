@@ -14,7 +14,7 @@
   Google Forms: For managing the contact form submissions.
 #Setup Instructions
   Clone the repository:
-    git clone https://github.com/johndoe/portfolio.git
+    git clone https://github.com/prodbyjohnwells/portfolio.git
   Install dependencies:
     npm install
   Start the development server:
