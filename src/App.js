@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import DataAnalytics from './DataAnalytics';
+import Programming from './Programming';
+import MusicPage from './MusicPage';
+import ContactForm from './ContactForm';
 import './App.css';
 
 
 // Import cursor images
-import dataAnalysisCursor from './assets/emoji_chart.png';
+import dataAnalytics from './assets/emoji_chart.png';
 import programmingCursor from './assets/emoji_floppy.png';
 import musicCursor from './assets/emoji_music.png';
 
@@ -12,7 +15,7 @@ const sections = {
   home: (
     <div id="home" className="section active">
       <div className="headshot">
-        <img src="/Professional_Headshot.jpg" alt="Headshot" />
+      <img src={`${process.env.PUBLIC_URL}/Professional_Headshot.jpg`} alt="Headshot" />
       </div>
       <div className="about-me">
         <h1>About Me</h1>
@@ -34,25 +37,25 @@ const sections = {
       </div>
     </div>
   ),
-  'data-analysis': (
-    <div id="data-analysis" className="section">
-      <DataAnalytics />
+  'data-analytics': (
+    <div id="data-analytics" className="section">
+      <DataAnalytics/>
     </div>
   ),
   // Add other sections here
   programming: (
     <div id="programming" className="section">
-      {/* Content for Programming section */}
+      <Programming/>
     </div>
   ),
   music: (
     <div id="music" className="section">
-      {/* Content for Music section */}
+      <MusicPage/>
     </div>
   ),
   contact: (
     <div id="contact" className="section">
-      {/* Content for Contact section */}
+      <ContactForm/>
     </div>
   )
 };
@@ -67,9 +70,9 @@ function App() {
           <li><a href="#home" onClick={() => setActiveSection('home')}>Home</a></li>
           <li>
             <a
-              href="#data-analysis"
-              onClick={() => setActiveSection('data-analysis')}
-              style={{ cursor: `url(${dataAnalysisCursor}), auto` }}
+              href="#data-analytics"
+              onClick={() => setActiveSection('data-analytics')}
+              style={{ cursor: `url(${dataAnalytics}), auto` }}
             >
               Data Analysis
             </a>

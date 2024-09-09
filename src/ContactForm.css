@@ -1,0 +1,17 @@
+.contact-form-container {
+    max-width: 100%; /* Adjust as needed, making sure it adapts to different screen sizes */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-form-container h2 {
+    font-size: 24px; /* Adjust the heading size as needed */
+  }
+
+  .contact-form-container iframe {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 8000px; /* Ensures the form doesn’t exceed this width */
+    height: 2000px; /* Adjust height as needed */
+    border: none;
+  }

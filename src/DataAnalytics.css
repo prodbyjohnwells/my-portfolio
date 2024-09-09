@@ -1,24 +1,25 @@
 /* DataAnalytics.css */
 
+/* General background for Data Analytics page */
 .data-analytics {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center; /* Ensure all child elements are centered */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Light background with transparency */
+  border-radius: 10px; /* Optional: rounded corners for the container */
 }
 
+/* Specific section background in Data Analytics */
 .data-analytics .section {
   width: 100%;
-  max-width: 2000px; /* Adjust as needed */
-  margin: 0 auto; /* Ensure the section itself is centered */
+  max-width: 2000px;
+  margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Ensure content is aligned in the center */
+  border-radius: 8px; /* Optional: rounded corners for each section */
 }
 
 .data-analytics h1 {

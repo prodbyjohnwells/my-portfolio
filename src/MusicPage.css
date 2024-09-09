@@ -1,0 +1,16 @@
+/* MusicPage.css */
+.music-page {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .soundcloud-embed {
+    margin: 0 auto;
+    max-width: 600px; /* Adjust this width as needed */
+  }
+
+  .soundcloud-embed iframe {
+    border: none;
+    width: 100%; /* Ensures iframe scales within the max-width container */
+    height: 400px; /* Adjust the height if needed */
+  }

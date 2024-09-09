@@ -6,7 +6,7 @@ const DataAnalytics = () => {
   return (
     <div className="data-analytics">
       <section className="section">
-        <h1>Data Analysis Projects</h1>
+        <h1>Data Analytics Projects</h1>
 
         <div className="project">
           <h2>

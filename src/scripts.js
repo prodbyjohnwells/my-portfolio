@@ -29,10 +29,10 @@ const sections = {
             </div>
         </div>
     `,
-    'data-analysis': `
-        <div id="data-analysis" class="section">
-            <h1>Data Analysis</h1>
-            <p>Information and projects related to data analysis will go here.</p>
+    'data-analytics': `
+        <div id="data-analytics" class="section">
+            <h1>Data Analytics</h1>
+            <p>Information and projects related to data analytics will go here.</p>
         </div>
     `,
     'programming': `
