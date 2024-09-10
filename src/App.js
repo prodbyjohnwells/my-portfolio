@@ -9,6 +9,9 @@ import './App.css';
 const sections = {
   home: (
     <div id="home" className="section active">
+      <div className="title">
+      <h1>John's Professional Portfolio</h1>
+      </div>
       <div className="headshot">
         <img src={`${process.env.PUBLIC_URL}/Professional_Headshot.jpg`} alt="Headshot" />
       </div>
