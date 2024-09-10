@@ -1,6 +1,6 @@
 /* Programming.css */
 .programming-page {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
   }
 
@@ -20,11 +20,11 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0,255,100,.85)); /* Linear gradient background from transparent */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 0px;
     max-width: 1000px; /* Increased max-width for larger cards */
     min-height: 300px;
     text-align: left;
-    margin: 10px; /* Adjust margins if needed */
+    margin: 0px; /* Adjust margins if needed */
     display: flex;
     flex-direction: column; /* Ensure items stack vertically */
     justify-content: space-between; /* Space items out evenly */
@@ -95,8 +95,8 @@
   }
 
   .project-card {
-      max-width: 100%; /* Full width on mobile */
-  }
+    max-width: 100%; /* Ensure full width on mobile */
+}
 
   .demo-iframe {
       height: 600px; /* Adjust iframe height for mobile */

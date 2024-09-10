@@ -21,13 +21,12 @@
     background-repeat: no-repeat;
 }
 
-
 /* Navbar menu styling */
 .navbar-menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
+    display: flex; /* Default display on larger screens */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -53,7 +52,7 @@
 
 /* Menu toggle button styling */
 .menu-toggle {
-    display: none;
+    display: none; /* Hide by default on larger screens */
     background: none;
     border: none;
     font-size: 2rem;
@@ -72,6 +71,7 @@
     body {
         padding-top: 80px;
     }
+    
     .navbar-menu {
         display: none; /* Hide the menu initially on smaller screens */
         flex-direction: column; /* Stack items vertically */
@@ -95,7 +95,7 @@
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show hamburger icon on smaller screens */
         align-self: center;
     }
 }
