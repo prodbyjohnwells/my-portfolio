@@ -5,7 +5,6 @@ import Programming from './Programming';
 import MusicPage from './MusicPage';
 import ContactForm from './ContactForm';
 import './App.css';
-import './styles.css';
 
 const sections = {
   home: (
