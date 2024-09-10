@@ -35,7 +35,7 @@
 
 .data-analytics h2 {
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px 0 20px;
 }
 
 .data-analytics h3 {
@@ -60,7 +60,7 @@
   width: 100%;
   display: flex;
   justify-content: center; /* Center the Tableau embed horizontally */
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .data-analytics .tableau-embed-container > div {
@@ -70,6 +70,7 @@
   max-height: 1377px;
   padding: 20px;
   overflow: auto;
+  box-sizing: border-box;
 }
 
 /* General styles for the hyperlink */
@@ -122,11 +123,11 @@
 
   .data-analytics .project {
     max-width: 90%; /* Adjust project container size for smaller screens */
-    margin: 40px 0;
+    margin: 20px 0;
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 90vh; /* Decrease Tableau embed height for mobile screens */
+    height: 70vh; /* Decrease Tableau embed height for mobile screens */
   }
   /* Optional: Style scrollbar for better visibility */
   .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
@@ -165,7 +166,7 @@
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 90vh; /* Decrease Tableau embed height for mobile screens */
+    height: 98vh; /* Decrease Tableau embed height for mobile screens */
   }
   /* Optional: Style scrollbar for better visibility */
   .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
@@ -183,7 +184,7 @@
 
   /* Reduce padding inside sections for better spacing on very small screens */
   .data-analytics .section {
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -197,7 +198,7 @@
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 90vh; /* Decrease Tableau embed height for mobile screens */
+    height: 80vh; /* Decrease Tableau embed height for mobile screens */
   }
   /* Optional: Style scrollbar for better visibility */
   .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
