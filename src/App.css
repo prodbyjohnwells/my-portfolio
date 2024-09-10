@@ -22,11 +22,11 @@ html, body {
   font-size: 1.75rem; /* Size of text outside the navbar */
   max-width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding-top: 60px;
 }
 
 /* Parallax background styling */
 .parallax {
-  position: fixed; /* Fix the background to the viewport */
   top: 0;
   left: 0;
   width: 100vw;
@@ -34,8 +34,6 @@ html, body {
   background: url('./austin_backdrop.jpg') no-repeat center center fixed;
   background-size: cover;
   z-index: -1; /* Ensure it's behind other content */
-  pointer-events: none; /* Disables interaction with the background */
-  will-change: transform; /* Optimizes performance by hinting to the browser */
 }
 
 /* Section styling */
@@ -49,8 +47,8 @@ html, body {
   display: block;
   text-align: left;
   padding: 2rem;
-  max-width: 1000px; /* Limit the width of the content on large screens */
   margin: 0 auto; /* Center the content on large screens */
+  max-width: 1000px; /* Limit the width of the content on large screens */
 }
 
 h1 {
@@ -98,11 +96,9 @@ main {
 
   .container {
     font-size: 1.25rem; /* Reduce font size on mobile */
-    margin-top: 4rem;
   }
 
   .parallax {
-    position: absolute; /* Use absolute positioning on mobile */
     background-attachment: local; /* Switch from fixed to scroll */
     height: auto;
     min-height: 100vh;
