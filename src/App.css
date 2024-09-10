@@ -103,6 +103,7 @@ main {
 
   .container {
     font-size: 1.25rem; /* Reduce font size on mobile */
+    margin-top: 4rem;
   }
 
   .parallax::before {

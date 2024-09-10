@@ -30,6 +30,7 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -62,6 +63,14 @@
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 1.5rem;
+        height: 70px;
+    }
+
+    body, .main-content {
+        padding-top: 80px;
+    }
     .navbar-menu {
         display: none; /* Hide the menu initially on smaller screens */
         flex-direction: column; /* Stack items vertically */
@@ -86,8 +95,7 @@
     }
 
     .menu-toggle {
-        margin-left: auto;
-        padding: 0.75rem;
         display: block;
+        align-self: center;
     }
 }
