@@ -44,10 +44,24 @@
     position: relative;
 }
 
+/* Default cursor styling for links */
 .navbar-menu a:hover {
     color: #88c0d0;
     cursor: pointer;
     transition: color 0.3s ease;
+}
+
+/* Custom cursors on hover */
+.navbar-menu a[data-section="data-analytics"]:hover {
+    cursor: url('./assets/emoji_chart.png'), auto; /* Custom cursor for Data Analytics */
+}
+
+.navbar-menu a[data-section="programming"]:hover {
+    cursor: url('./assets/emoji_floppy.png'), auto; /* Custom cursor for Programming */
+}
+
+.navbar-menu a[data-section="music"]:hover {
+    cursor: url('./assets/emoji_music.png'), auto; /* Custom cursor for Music */
 }
 
 /* Menu toggle button styling */
@@ -71,7 +85,7 @@
     body {
         padding-top: 80px;
     }
-    
+
     .navbar-menu {
         display: none; /* Hide the menu initially on smaller screens */
         flex-direction: column; /* Stack items vertically */
