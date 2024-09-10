@@ -7,7 +7,7 @@
     box-sizing: border-box;
     top: 0;
     z-index: 1000;
-    position: sticky;
+    position: fixed;
     padding: 1rem;
     justify-content: center; /* Adjust to space items */
     align-items: center;
@@ -65,18 +65,16 @@
     .navbar-menu {
         display: none; /* Hide the menu initially on smaller screens */
         flex-direction: column; /* Stack items vertically */
+        position: absolute;
+        top: 60px;
         width: 100%;
         max-width: 100vw;
-        max-height: 0;
         box-sizing: border-box;
-        overflow: hidden;
-        transition: max-height 0.5s ease-in-out;
         background-color: rgba(2, 21, 90, 0.95); /* Add a semi-transparent background color */
     }
 
     .navbar-menu.open {
         display: flex; /* Show the menu when toggled */
-        max-height: 500px; /* Allow it to expand as needed */
         transition: max-height 0.5s ease-in-out;
     }
 

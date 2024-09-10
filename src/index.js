@@ -7,3 +7,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />
 );
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const navbarMenu = document.querySelector('.navbar-menu');
+    navbarMenu.classList.toggle('open');  // Toggle the "open" class
+});
