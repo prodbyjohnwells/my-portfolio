@@ -17,16 +17,38 @@
   max-width: 100%; /* Ensure content scales properly */
 }
 
+.embed-container {
+  margin-bottom: 20px; /* Increases */
+}
+
 .soundcloud-embed, .artist-biography {
   flex: 1; /* Ensure both sections take up equal space */
   max-width: 100%; /* Adjust to fit smaller screens */
 }
 
 .artist-biography {
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 20px; /* Increases padding for better spacing */
   text-align: left; /* Align text to the left */
   background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0,100,255,.85)); /* Linear gradient background from transparent to blue */
-  border-radius: 2%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.artist-biography h1:hover, p:hover {
+  transition: transform 0.6s ease;
+  transform: scale(1.05);
+}
+
+.artist-biography h1 {
+  margin-bottom: 15px; /* Space below the heading */
+  font-size: 28px; /* Adjust heading size */
+  line-height: 1.4; /* Increase line height for better readability */
+}
+
+.artist-biography p {
+  margin-bottom: 15px; /* Space between paragraphs */
+  font-size: 18px; /* Adjust font size for readability */
+  line-height: 1.6; /* Increase line height for better readability */
 }
 
 .streaming-buttons {
@@ -56,7 +78,14 @@
   transition: transform 0.3s ease;
 }
 
+
 /* Responsive Design for larger screens */
+@media (min-width: 1024px) {
+  .artist-biography {
+    padding:20px 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .streaming-buttons img {
     width: 40px; /* Larger size for larger screens */
@@ -67,10 +96,27 @@
   .artist-biography p {
     font-size: 16px; /* Scale down paragraph text */
   }
+  .streaming-buttons h2 {
+    font-size: 24px;
+  }
 }
 
-@media (min-width: 1024px) {
+/* Additional responsiveness for smaller screens */
+@media (max-width: 480px) {
+  .music-page {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+  .music-page-content {
+    flex-direction: column; /* Stack items vertically on very small screens */
+  }
+  .soundcloud-embed, .artist-biography {
+    max-width: 100%; /* Ensure full width on small screens */
+    margin-bottom: 20px; /* Space between sections */
+  }
   .artist-biography {
-    padding: 0 40px;
+    padding: 10px; /* Reduce padding for small screens */
+  }
+  .streaming-buttons h2 {
+    font-size: 20px;
   }
 }

@@ -13,6 +13,18 @@ const Navbar = ({ setActiveSection, activeSection }) => {
         setIsOpen(!isOpen);
     };
 
+    const handleNavClick = (section) => (event) => {
+        event.preventDefault(); // Prevent default anchor scroll behavior
+        setActiveSection(section);
+        setIsOpen(false);
+
+        // Optional: Smooth scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <nav className="navbar">
             <button className="menu-toggle" onClick={toggleMenu} aria-expanded={isOpen}>
@@ -23,10 +35,7 @@ const Navbar = ({ setActiveSection, activeSection }) => {
                 <li>
                     <a
                         href="#home"
-                        onClick={() => {
-                            setActiveSection('home');
-                            setIsOpen(false);
-                        }}
+                        onClick={handleNavClick('home')}
                         className={activeSection === 'home' ? 'active' : ''}
                     >
                         Home
@@ -35,10 +44,7 @@ const Navbar = ({ setActiveSection, activeSection }) => {
                 <li>
                     <a
                         href="#data-analytics"
-                        onClick={() => {
-                            setActiveSection('data-analytics');
-                            setIsOpen(false);
-                        }}
+                        onClick={handleNavClick('data-analytics')}
                         className={activeSection === 'data-analytics' ? 'active' : ''}
                         style={{ cursor: `url(${dataAnalytics}), pointer, auto` }}
                     >
@@ -48,10 +54,7 @@ const Navbar = ({ setActiveSection, activeSection }) => {
                 <li>
                     <a
                         href="#programming"
-                        onClick={() => {
-                            setActiveSection('programming');
-                            setIsOpen(false);
-                        }}
+                        onClick={handleNavClick('programming')}
                         className={activeSection === 'programming' ? 'active' : ''}
                         style={{ cursor: `url(${programmingCursor}), pointer, auto` }}
                     >
@@ -61,10 +64,7 @@ const Navbar = ({ setActiveSection, activeSection }) => {
                 <li>
                     <a
                         href="#music"
-                        onClick={() => {
-                            setActiveSection('music');
-                            setIsOpen(false);
-                        }}
+                        onClick={handleNavClick('music')}
                         className={activeSection === 'music' ? 'active' : ''}
                         style={{ cursor: `url(${musicCursor}), pointer, auto` }}
                     >
@@ -74,10 +74,7 @@ const Navbar = ({ setActiveSection, activeSection }) => {
                 <li>
                     <a
                         href="#contact"
-                        onClick={() => {
-                            setActiveSection('contact');
-                            setIsOpen(false);
-                        }}
+                        onClick={handleNavClick('contact')}
                         className={activeSection === 'contact' ? 'active' : ''}
                     >
                         Contact

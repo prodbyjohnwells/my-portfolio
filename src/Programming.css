@@ -23,7 +23,6 @@
     padding: 20px;
     max-width: 1000px; /* Increased max-width for larger cards */
     min-height: 300px;
-    height: auto;
     text-align: left;
     margin: 10px; /* Adjust margins if needed */
     display: flex;
@@ -84,3 +83,40 @@
     border: none;
     border-radius: 4px;
   }
+
+  /* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+  .programming-title {
+      font-size: 2em;
+  }
+
+  .projects-container {
+      flex-direction: column;
+  }
+
+  .project-card {
+      max-width: 100%; /* Full width on mobile */
+  }
+
+  .demo-iframe {
+      height: 600px; /* Adjust iframe height for mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .programming-title {
+      font-size: 1.75em;
+  }
+
+  .project-card h2 {
+      font-size: 1.2em;
+  }
+
+  .project-card p {
+      font-size: 0.9em;
+  }
+
+  .demo-iframe {
+      height: 400px; /* Smaller height for very small screens */
+  }
+}

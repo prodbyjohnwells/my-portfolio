@@ -27,8 +27,6 @@
   margin: 20px 0;
   width: 100%;
   text-align: center; /* Center the h1 text */
-  display: inline-block; /* Prevent external layout influences */
-  justify-content: center; /* Extra centering for flex containers */
 }
 
 .data-analytics h2, .data-analytics h3 {
@@ -37,15 +35,18 @@
 
 .data-analytics h2 {
   font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .data-analytics h3 {
   font-size: 40px;
+  margin-top: 20px;
 }
 
 .data-analytics p {
   text-align: center;
   font-size: 30px;
+  margin: 20px 0;
 }
 
 .data-analytics .project {
@@ -59,13 +60,16 @@
   width: 100%;
   display: flex;
   justify-content: center; /* Center the Tableau embed horizontally */
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .data-analytics .tableau-embed-container > div {
   width: 100%;
   max-width: 1000px; /* Ensure Tableau embed does not exceed this width */
-  height: 600px; /* Adjust height as needed */
+  height: 80vh;
+  max-height: 1377px;
+  padding: 20px;
+  overflow: auto;
 }
 
 /* General styles for the hyperlink */
@@ -118,10 +122,24 @@
 
   .data-analytics .project {
     max-width: 90%; /* Adjust project container size for smaller screens */
+    margin: 40px 0;
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 400px; /* Decrease Tableau embed height for mobile screens */
+    height: 90vh; /* Decrease Tableau embed height for mobile screens */
+  }
+  /* Optional: Style scrollbar for better visibility */
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
+    width: 12px; /* Increase scrollbar width */
+  }
+
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Round scrollbar thumb */
+  }
+
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar thumb color on hover */
   }
 }
 
@@ -130,8 +148,16 @@
     padding: 10px;
   }
 
-  .data-analytics h1, .data-analytics h2, .data-analytics h3 {
-    font-size: 20px; /* Make headers smaller for very small screens */
+  .data-analytics h1 {
+    font-size: 30px;
+  }
+
+  .data-analytics h2 {
+    font-size: 25px;
+  }
+
+  .data-analytics h3 {
+    font-size: 20px;
   }
 
   .data-analytics p {
@@ -139,6 +165,51 @@
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 300px; /* Further decrease Tableau embed height */
+    height: 90vh; /* Decrease Tableau embed height for mobile screens */
+  }
+  /* Optional: Style scrollbar for better visibility */
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
+    width: 12px; /* Increase scrollbar width */
+  }
+
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Round scrollbar thumb */
+  }
+
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar thumb color on hover */
+  }
+
+  /* Reduce padding inside sections for better spacing on very small screens */
+  .data-analytics .section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-analytics h1, .data-analytics h2, .data-analytics h3 {
+    font-size: 20px;
+  }
+
+  .data-analytics p {
+    font-size: 14px;
+  }
+
+  .data-analytics .tableau-embed-container > div {
+    height: 90vh; /* Decrease Tableau embed height for mobile screens */
+  }
+  /* Optional: Style scrollbar for better visibility */
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
+    width: 12px; /* Increase scrollbar width */
+  }
+
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Round scrollbar thumb */
+  }
+
+  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar thumb color on hover */
   }
 }

@@ -7,9 +7,10 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%; /* Fix for horizontal scrollbars on mobile */
   height: 100%;
   box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Ensure the body and html take full height */
@@ -100,6 +101,14 @@ main {
     padding: 1rem;
   }
 
+  .container {
+    font-size: 1.25rem; /* Reduce font size on mobile */
+  }
+
+  .parallax::before {
+    background-attachment: scroll; /* Disable fixed background on mobile */
+  }
+
   .headshot img {
     float: none; /* Remove the float on smaller screens */
     display: block;
@@ -114,6 +123,6 @@ main {
 
 @media screen and (max-width: 480px) {
   .headshot img {
-    width: 100px; /* Shrink the image further for very small screens */
+    width: 100%; /* Shrink the image further for very small screens */
   }
 }

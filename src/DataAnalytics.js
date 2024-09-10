@@ -20,10 +20,10 @@ const DataAnalytics = () => {
           Our goal is to identify trends, assess damage, and develop strategies for better flood management and preparedness.
           </p>
           <TableauEmbed
-            url="https://public.tableau.com/views/CapstoneProject-TexasFlooding/TexasFloods"
+            url="https://public.tableau.com/views/CapstoneProject-TexasFlooding/TexasFloods?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
             id="tableau-project-1"
             width="100%"
-            height="700px"
+            height="1200px"
           />
           <h3>
           Key Insights:
