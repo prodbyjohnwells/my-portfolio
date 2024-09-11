@@ -67,7 +67,11 @@
   align-items: center; /* Center buttons vertically */
   gap: 10px; /* Space between buttons */
   margin-top: 20px; /* Space above the buttons */
+  background-color: #056976; /* Light bluish background color */
+  padding: 10px; /* Padding around the buttons */
+  border-radius: 8px; /* Rounded corners for background */
 }
+
 
 /* Spacing for heading within streaming buttons container */
 .streaming-buttons h2 {
