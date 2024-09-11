@@ -43,7 +43,7 @@
 /* Hover effect for headings and paragraphs in artist biography */
 .artist-biography h1:hover, p:hover {
   transition: transform 0.6s ease; /* Smooth transition for transformation */
-  transform: scale(1.05); /* Slightly zoom text on hover */
+  transform: scale(1.02); /* Slightly zoom text on hover */
 }
 
 /* Styling for artist biography heading */

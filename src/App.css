@@ -24,6 +24,7 @@ html, body {
   max-width: 100%; /* Prevents content from exceeding the page width */
   overflow-x: hidden; /* Ensures no horizontal scrolling */
   padding-top: 60px; /* Adds spacing at the top to account for the navbar */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
 }
 
 /* Parallax background styling */
@@ -39,8 +40,28 @@ html, body {
 
 /* General section styling */
 .section {
-  padding: 2rem; /* Adds padding inside the section */
-  margin-bottom: 2rem; /* Adds space between sections to prevent crowding */
+  position: relative; /* Allows positioning of the pseudo-element */
+  padding: 2rem; /* Padding inside the section */
+  margin-bottom: 2rem; /* Space between sections */
+  overflow: hidden; /* Ensures content doesn't spill outside */
+}
+
+/* Pseudo-element for gradient background */
+.section::before {
+  content: ""; /* Creates an empty element */
+  position: absolute; /* Positions it absolutely within the .section */
+  top: 5%; /* Starts the gradient lower down, adjust as needed */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 15%); /* Adjust height so gradient ends just after the content */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(100, 0, 255, 0.85) 100%);
+  z-index: 1; /* Ensures it is above the background image but below content */
+}
+
+/* Ensure content within the section appears above the pseudo-element */
+.section > * {
+  position: relative; /* Position relative to be above the pseudo-element */
+  z-index: 2;
 }
 
 /* Home section styling */
@@ -71,6 +92,7 @@ html, body {
 /* Styling for all h1 elements */
 h1 {
   letter-spacing: 0.05em; /* Adds space between characters for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
 }
 
 /* Headshot image styling */
@@ -93,13 +115,13 @@ h1 {
 .about-me {
   max-width: 100%; /* Prevents content from exceeding the container width */
   line-height: 1.6; /* Improves text readability */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(100,0,255,.85)); /* Adds a gradient background from black to purple */
   padding: 1rem; /* Adds padding inside the section */
   padding-bottom: 2rem; /* Extra padding at the bottom */
   margin-bottom: 3rem; /* Adds margin below the section */
   border-radius: 10px; /* Rounds the corners of the background */
   position: relative; /* Positions the section relative to the normal flow */
   z-index: 1; /* Ensures this content is above the parallax background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
 }
 
 /* Main content section styling */
