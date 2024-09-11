@@ -1,63 +1,69 @@
+/* ContactForm.css */
+
+/* Background for the Contact Form page */
 .contact-background {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack items vertically */
   justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(255,255,255,.85)); /* Gradient background */
-  padding: 5px; /* Padding around the background */
-  width: 100%; /* Full width */
-  border-radius: 2%;
-  min-height: 100vh; /* Full viewport height */
-  box-sizing: border-box; /* Include padding/border in width calculation */
-  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(255,255,255,.85)); /* Gradient background from black to white */
+  padding: 5px; /* Padding around the background container */
+  width: 100%; /* Full width of the viewport */
+  border-radius: 2%; /* Slight rounding of the container's corners */
+  min-height: 100vh; /* Ensure the container covers the full viewport height */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  overflow: hidden; /* Prevent overflow from causing unwanted scrollbars */
 }
 
+/* Container for the contact form */
 .contact-form-container {
-  max-width: 90%; /* Use a percentage to allow for some padding */
-  margin: 0 auto; /* Center horizontally */
-  padding: 1rem;
-  text-align: center;
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  max-width: 90%; /* Limit the form container width to 90% of the parent */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 1rem; /* Add space inside the container */
+  text-align: center; /* Center the text within the container */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width/height calculation */
 }
 
+/* Heading styles within the contact form container */
 .contact-form-heading {
-  margin-bottom: 1rem; /* Space between heading and form */
+  margin-bottom: 1rem; /* Space between the heading and the contact form */
 }
 
+/* Styles for the embedded iframe (e.g., for the contact form) */
 .contact-form-container iframe {
-  width: 100%; /* Ensure iframe fits within the container */
-  height: 1000px; /* Adjust height as needed */
-  border: none;
-  box-sizing: border-box; /* Include padding/border in width calculation */
+  width: 100%; /* Make the iframe fill the full width of its container */
+  height: 1000px; /* Set a fixed height for the iframe */
+  border: none; /* Remove default iframe border */
+  box-sizing: border-box; /* Include padding and border in the total width/height */
 }
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-.contact-form-container {
-    padding: 0; /* Reduce padding */
+  .contact-form-container {
+    padding: 0; /* Remove extra padding on smaller screens */
+  }
+
+  .contact-form-heading h2 {
+    font-size: 1.25rem; /* Reduce heading size for better readability on mobile */
+  }
+
+  .contact-form-container iframe {
+    height: 1170px; /* Increase iframe height for mobile screens to ensure content is visible */
+  }
+
+  .contact-background {
+    padding: 0; /* Remove extra padding around the contact background on smaller screens */
+  }
 }
 
-.contact-form-heading h2 {
-    font-size: 1.25rem; /* Smaller heading size for mobile */
-}
-
-.contact-form-container iframe {
-  height: 1170px; /* Adjust height for mobile */
-}
-
-.contact-background {
-    padding: 0; /* Remove extra padding */
-}
-}
-
+/* Responsive design for larger screens */
 @media screen and (min-width: 769px) {
-/* Ensure the container takes full height on larger screens */
-.contact-background {
-    padding: 1rem; /* Add padding for larger screens */
-    border-radius: 10px; /* Border-radius if desired */
-}
+  .contact-background {
+    padding: 1rem; /* Add extra padding for larger screens */
+    border-radius: 10px; /* Increase the border radius for larger screens if desired */
+  }
 
-.contact-form-container {
-    height: 100vh; /* Full viewport height */
-}
+  .contact-form-container {
+    height: 100vh; /* Set the form container height to fill the viewport on larger screens */
+  }
 }

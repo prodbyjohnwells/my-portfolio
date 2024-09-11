@@ -2,215 +2,191 @@
 
 /* General background for Data Analytics page */
 .data-analytics {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(100,0,50,.85)); /* Linear gradient background from transparent to red */
-  border-radius: 10px; /* Optional: rounded corners for the container */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Space around the container */
+  max-width: 1200px; /* Limit the max width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center; /* Center-align all text */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(100,0,50,.85)); /* Gradient background from black to dark red/purple */
+  border-radius: 10px; /* Rounded corners for the main container */
 }
 
 /* Specific section background in Data Analytics */
 .data-analytics .section {
-  width: 100%;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px; /* Optional: rounded corners for each section */
+  width: 100%; /* Full width for sections */
+  max-width: 2000px; /* Set a maximum width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 20px; /* Add space within the section */
+  border-radius: 8px; /* Slightly round the section corners */
 }
 
+/* Main heading styles */
 .data-analytics h1 {
-  font-size: 70px;
-  margin: 20px 0;
-  width: 100%;
-  text-align: center; /* Center the h1 text */
+  font-size: 70px; /* Large font size for the main header */
+  margin: 20px 0; /* Vertical space around the header */
+  width: 100%; /* Ensure the heading takes the full width */
+  text-align: center; /* Center the heading */
 }
 
+/* Secondary and tertiary heading styles */
 .data-analytics h2, .data-analytics h3 {
-  text-align: center;
+  text-align: center; /* Center all subheadings */
 }
 
 .data-analytics h2 {
-  font-size: 50px;
-  margin-bottom: 10px 0 20px;
+  font-size: 50px; /* Large font for secondary headings */
+  margin-bottom: 10px 0 20px; /* Add margin around */
 }
 
 .data-analytics h3 {
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 40px; /* Font size for tertiary headings */
+  margin-top: 20px; /* Space above h3 headings */
 }
 
+/* Paragraph styles */
 .data-analytics p {
-  text-align: center;
-  font-size: 30px;
-  margin: 20px 0;
+  text-align: center; /* Center paragraphs */
+  font-size: 30px; /* Larger font size for text */
+  margin: 20px 0; /* Space around paragraphs */
 }
 
+/* Project section styles */
 .data-analytics .project {
-  width: 100%;
-  max-width: 1000px; /* Ensure each project section does not exceed the maximum width */
-  margin: 40px 0;
-  text-align: center; /* Center text within each project */
+  width: 100%; /* Full width */
+  max-width: 1000px; /* Limit the width of the project section */
+  margin: 40px 0; /* Vertical space around project section */
+  text-align: center; /* Center content inside projects */
 }
 
+/* Tableau embed container styles */
 .data-analytics .tableau-embed-container {
-  width: 100%;
-  display: flex;
-  justify-content: center; /* Center the Tableau embed horizontally */
-  margin: 20px 0;
+  width: 100%; /* Full width for Tableau embeds */
+  display: flex; /* Use flexbox to align content */
+  justify-content: center; /* Center the Tableau embed */
+  margin: 20px 0; /* Add space above and below the embed */
 }
 
 .data-analytics .tableau-embed-container > div {
-  width: 100%;
-  max-width: 1000px; /* Ensure Tableau embed does not exceed this width */
-  height: 80vh;
-  max-height: 1377px;
-  padding: 20px;
-  overflow: auto;
-  box-sizing: border-box;
+  width: 100%; /* Full width for the embedded content */
+  max-width: 1000px; /* Limit the width of embedded content */
+  height: 80vh; /* Set height as a percentage of the viewport */
+  max-height: 1377px; /* Ensure maximum height */
+  padding: 20px; /* Padding around embedded content */
+  overflow: auto; /* Allow scrolling inside the container */
+  box-sizing: border-box; /* Include padding and borders in the width calculation */
 }
 
-/* General styles for the hyperlink */
+/* General styles for hyperlinks */
 .data-analytics .project h2 a {
-  color: #cacaca; /* Link color */
-  text-decoration: none; /* No underline by default */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: #cacaca; /* Light grey color for links */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Hover state */
+/* Hover state for hyperlinks */
 .data-analytics .project h2 a:hover {
-  color: #0056b3 !important; /* Use !important to override any other conflicting styles */
-  transform: scale(1.05); /* Slightly scales the text */
-  text-decoration: underline; /* Adds underline on hover */
+  color: #0056b3 !important; /* Blue color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  text-decoration: underline; /* Add underline on hover */
 }
 
-/* Visited state to prevent purple color */
+/* Visited state to maintain consistent link color */
 .data-analytics .project h2 a:visited {
-  color: #cacaca !important; /* Keep the color consistent after visiting */
+  color: #cacaca !important; /* Keep light grey color after visiting the link */
 }
 
-.data-analytics h1, .data-analytics h2, .data-analytics h3 {
-  transition: color 0.3s ease;
-}
-
+/* Add text shadow for better readability on dark background */
 .data-analytics h1, .data-analytics h2, .data-analytics h3, .data-analytics p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
 }
 
+/* Add interactivity to headings */
 .data-analytics h1:hover, .data-analytics h2:hover, .data-analytics h3:hover {
-  color: #0056b3; /* Optional: Make headings interactive too */
+  color: #0056b3; /* Change color on hover */
 }
 
+/* Responsive styles for medium screens */
 @media (max-width: 768px) {
   .data-analytics h1 {
-    font-size: 40px;
+    font-size: 40px; /* Adjust font size for smaller screens */
   }
 
   .data-analytics h2 {
-    font-size: 30px;
+    font-size: 30px; /* Adjust secondary heading size */
   }
 
   .data-analytics h3 {
-    font-size: 25px;
+    font-size: 25px; /* Adjust tertiary heading size */
   }
 
   .data-analytics p {
-    font-size: 20px;
+    font-size: 20px; /* Adjust paragraph font size */
   }
 
   .data-analytics .project {
-    max-width: 90%; /* Adjust project container size for smaller screens */
-    margin: 20px 0;
+    max-width: 90%; /* Make project sections more compact */
+    margin: 20px 0; /* Adjust spacing */
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 70vh; /* Decrease Tableau embed height for mobile screens */
+    height: 70vh; /* Reduce height for smaller screens */
   }
-  /* Optional: Style scrollbar for better visibility */
+
+  /* Optional: Style the scrollbar */
   .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
     width: 12px; /* Increase scrollbar width */
   }
 
   .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar thumb color */
+    background: #888; /* Color for the scrollbar thumb */
     border-radius: 10px; /* Round scrollbar thumb */
   }
 
   .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Scrollbar thumb color on hover */
+    background: #555; /* Darken scrollbar thumb on hover */
   }
 }
 
+/* Responsive styles for small screens */
 @media (max-width: 600px) {
   .data-analytics {
-    padding: 10px;
+    padding: 10px; /* Reduce padding for smaller screens */
   }
 
   .data-analytics h1 {
-    font-size: 30px;
+    font-size: 30px; /* Smaller font size for main heading */
   }
 
   .data-analytics h2 {
-    font-size: 25px;
+    font-size: 25px; /* Smaller secondary heading */
   }
 
   .data-analytics h3 {
-    font-size: 20px;
+    font-size: 20px; /* Smaller tertiary heading */
   }
 
   .data-analytics p {
-    font-size: 16px;
+    font-size: 16px; /* Smaller paragraph text */
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 98vh; /* Decrease Tableau embed height for mobile screens */
-  }
-  /* Optional: Style scrollbar for better visibility */
-  .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
-    width: 12px; /* Increase scrollbar width */
-  }
-
-  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar thumb color */
-    border-radius: 10px; /* Round scrollbar thumb */
-  }
-
-  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Scrollbar thumb color on hover */
-  }
-
-  /* Reduce padding inside sections for better spacing on very small screens */
-  .data-analytics .section {
-    padding: 10px;
+    height: 98vh; /* Full height on mobile devices */
   }
 }
 
+/* Responsive styles for very small screens */
 @media (max-width: 480px) {
   .data-analytics h1, .data-analytics h2, .data-analytics h3 {
-    font-size: 20px;
+    font-size: 20px; /* Reduce heading sizes */
   }
 
   .data-analytics p {
-    font-size: 14px;
+    font-size: 14px; /* Smaller paragraph text */
   }
 
   .data-analytics .tableau-embed-container > div {
-    height: 80vh; /* Decrease Tableau embed height for mobile screens */
-  }
-  /* Optional: Style scrollbar for better visibility */
-  .data-analytics .tableau-embed-container > div::-webkit-scrollbar {
-    width: 12px; /* Increase scrollbar width */
-  }
-
-  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar thumb color */
-    border-radius: 10px; /* Round scrollbar thumb */
-  }
-
-  .data-analytics .tableau-embed-container > div::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Scrollbar thumb color on hover */
+    height: 80vh; /* Adjust Tableau embed height for small screens */
   }
 }
