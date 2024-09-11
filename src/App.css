@@ -47,13 +47,13 @@ html, body {
 }
 
 /* Pseudo-element for gradient background */
-.section::before {
+.home-section::before {
   content: ""; /* Creates an empty element */
   position: absolute; /* Positions it absolutely within the .section */
   top: 5%; /* Starts the gradient lower down, adjust as needed */
   left: 0;
   width: 100%;
-  height: calc(100% - 15%); /* Adjust height so gradient ends just after the content */
+  height: calc(100% - 10%); /* Adjust height so gradient ends just after the content */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(100, 0, 255, 0.85) 100%);
   z-index: 1; /* Ensures it is above the background image but below content */
 }
@@ -65,7 +65,7 @@ html, body {
 }
 
 /* Home section styling */
-#home {
+.home-section {
   display: block; /* Ensures block-level layout */
   text-align: left; /* Left-aligns text */
   padding: 2rem; /* Adds internal padding */
@@ -77,7 +77,7 @@ html, body {
 }
 
 /* Title styling in the Home section */
-#home .title {
+.home-section .title {
   margin-top: 2rem; /* Adds space above the title */
   font-size: 2.5rem; /* Sets larger font size for the title */
   font-weight: bold; /* Makes the title bold */
@@ -131,12 +131,12 @@ main {
 
 /* Responsive design for medium screens (768px and smaller) */
 @media screen and (max-width: 768px) {
-  #home {
+  .home-section {
     max-width: 100%; /* Makes the home section fill the screen width */
     padding: 1rem; /* Reduces padding on smaller screens */
   }
 
-  #home .title {
+  .home-section .title {
     font-size: 1.8rem; /* Reduces the title size for medium screens */
     padding: 0 1.5rem; /* Adds padding around the title */
   }
@@ -171,7 +171,8 @@ main {
   .headshot img {
     width: 100%; /* Makes the image fill the available space */
   }
-  #home .title {
+
+  .home-section .title {
     font-size: 1.5rem; /* Further reduces the title size for small screens */
     padding: 0 1.2rem; /* Reduces padding around the title */
   }

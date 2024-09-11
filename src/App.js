@@ -8,7 +8,7 @@ import './App.css';
 
 const sections = {
   home: (
-    <div id="home" className="section active">
+    <div id="home" className="home-section section active">
       <div className="title">
       <h1>John's Professional Portfolio</h1>
       </div>
@@ -16,22 +16,22 @@ const sections = {
         <img src={`${process.env.PUBLIC_URL}/Professional_Headshot.jpg`} alt="Headshot" />
       </div>
       <div className="about-me">
-        <h1>About Me</h1>
-        <p>
-          Hey there! I'm <strong>John</strong>, a certified Front-End Programmer and Data Analyst with a strong foundation in both technology and data-driven insights.
-        </p>
-        <p>
-          With expertise in both front-end development and data analysis, I excel at blending technical skills and analytical thinking to build dynamic web solutions and uncover valuable insights from complex datasets.
-        </p>
-        <p>
-          Whether I’m coding innovative web applications, developing robust data models, or designing intuitive visualizations, I approach each project with enthusiasm and precision.
-        </p>
-        <p>
-          Outside of my professional endeavors, I enjoy composing music, playing RPG games, and embarking on adventures with my family.
-        </p>
-        <p>
-          Let’s connect and explore how my diverse skill set can contribute to your team's success! Feel free to drop me a message—I’d love to chat about how we can leverage both technology and data to achieve your goals.
-        </p>
+      <h1>About Me</h1>
+      <p>
+          Step into a world where <em>technical expertise</em> and <strong>analytical insight</strong> seamlessly blend to drive innovation. I'm <strong>John</strong>, a certified Front-End Programmer and Data Analyst, dedicated to building <em>dynamic web applications</em> and unlocking <strong>valuable insights</strong> from complex data.
+      </p>
+      <p>
+          With a passion for <em>crafting solutions</em> that merge design and functionality, I strive to create intuitive digital experiences and powerful <strong>visualizations</strong> that make data more accessible and engaging.
+      </p>
+      <p>
+          My approach is rooted in a love for <strong>precision</strong> and <em>problem-solving</em>, whether I'm coding immersive websites or diving deep into data analysis. Every project is an opportunity to <strong>transform ideas</strong> into actionable outcomes.
+      </p>
+      <p>
+          Outside the tech world, I channel my creativity into <strong>music production</strong>, RPG games, and spending time with my family—always seeking new ways to <em>explore, create,</em> and <strong>innovate</strong>.
+      </p>
+      <p>
+          Let's collaborate and <strong>harness the power of technology</strong> and data to drive success for your team. Drop me a message—I'm eager to connect and explore new possibilities.
+      </p>
       </div>
     </div>
   ),

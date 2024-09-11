@@ -98,7 +98,7 @@ const MusicPage = () => {
         </div>
       </div>
       <div className="streaming-buttons">
-        <h2>Listen on</h2>
+        <h2>Follow me!</h2>
         <a href="https://soundcloud.com/prodbyjohnwells" target="_blank" rel="noopener noreferrer">
           <img src={logoSoundCloud} alt="SoundCloud" />
         </a>
