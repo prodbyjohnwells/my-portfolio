@@ -7,9 +7,9 @@
   justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
   background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(255,255,255,.85)); /* Gradient background from black to white */
-  padding: 5px; /* Padding around the background container */
+  padding: 10px; /* Padding around the background container */
   width: 100%; /* Full width of the viewport */
-  border-radius: 2%; /* Slight rounding of the container's corners */
+  border-radius: 10%; /* Slight rounding of the container's corners */
   min-height: 100vh; /* Ensure the container covers the full viewport height */
   box-sizing: border-box; /* Include padding and border in element's total width/height */
   overflow: hidden; /* Prevent overflow from causing unwanted scrollbars */
@@ -17,9 +17,9 @@
 
 /* Container for the contact form */
 .contact-form-container {
-  max-width: 90%; /* Limit the form container width to 90% of the parent */
+  max-width: 40%; /* Limit the form container width to 90% of the parent */
   margin: 0 auto; /* Center the container horizontally */
-  padding: 1rem; /* Add space inside the container */
+  padding: 0; /* Add space inside the container */
   text-align: center; /* Center the text within the container */
   box-sizing: border-box; /* Ensure padding and borders are included in the width/height calculation */
 }

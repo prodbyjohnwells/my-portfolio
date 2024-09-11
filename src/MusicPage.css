@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
-  padding: 20px; /* Padding around the content */
-  max-width: 1200px; /* Maximum width of the container */
-  margin: 0 auto; /* Center container horizontally */
+  padding: 10px; /* Padding around the content */
+  max-width: 69.9%; /* Maximum width of the container */
+  margin: auto; /* Center container horizontally */
   background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0,100,255,.85)); /* Gradient background from black to blue */
+  border-radius: 1%;
 }
 
 /* Container for content sections within the music page */
@@ -33,6 +34,11 @@
 }
 
 /* Styling for the artist biography section */
+.music-page-content .artist-biography h1 {
+  margin-bottom: 15px; /* Space below the heading */
+  font-size: 1.5em; /* Font size for the heading */
+  line-height: 1.4; /* Increase line height for readability */
+}
 .artist-biography {
   padding: 20px; /* Padding around the biography content */
   text-align: left; /* Align text to the left */
@@ -47,14 +53,10 @@
 }
 
 /* Styling for artist biography heading */
-.artist-biography h1 {
-  margin-bottom: 15px; /* Space below the heading */
-  font-size: 28px; /* Font size for the heading */
-  line-height: 1.4; /* Increase line height for readability */
-}
+
 
 /* Styling for paragraphs in artist biography */
-.artist-biography p {
+.music-page-content .artist-biography p {
   margin-bottom: 15px; /* Space between paragraphs */
   font-size: 18px; /* Font size for paragraphs */
   line-height: 1.6; /* Increase line height for readability */

@@ -46,16 +46,6 @@ const Programming = () => {
                   ></iframe>
                 </div>
               )}
-              {project.videoDemo && (
-                <div className="video-container">
-                  <iframe
-                    src={project.videoDemo}
-                    title={`${project.title} Video Demo`}
-                    className="video-iframe"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              )}
             </div>
           </div>
         ))}
