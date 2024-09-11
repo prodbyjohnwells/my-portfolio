@@ -16,22 +16,26 @@ const sections = {
         <img src={`${process.env.PUBLIC_URL}/Professional_Headshot.jpg`} alt="Headshot" />
       </div>
       <div className="about-me">
-      <h1>About Me</h1>
-      <p>
+        <h1>About Me</h1>
+        <p>
           Step into a world where <em>technical expertise</em> and <strong>analytical insight</strong> seamlessly blend to drive innovation. I'm <strong>John</strong>, a certified Front-End Programmer and Data Analyst, dedicated to building <em>dynamic web applications</em> and unlocking <strong>valuable insights</strong> from complex data.
-      </p>
-      <p>
+        </p>
+        <br />
+        <p>
           With a passion for <em>crafting solutions</em> that merge design and functionality, I strive to create intuitive digital experiences and powerful <strong>visualizations</strong> that make data more accessible and engaging.
-      </p>
-      <p>
+        </p>
+        <br />
+        <p>
           My approach is rooted in a love for <strong>precision</strong> and <em>problem-solving</em>, whether I'm coding immersive websites or diving deep into data analysis. Every project is an opportunity to <strong>transform ideas</strong> into actionable outcomes.
-      </p>
-      <p>
+        </p>
+        <br />
+        <p>
           Outside the tech world, I channel my creativity into <strong>music production</strong>, RPG games, and spending time with my family—always seeking new ways to <em>explore, create,</em> and <strong>innovate</strong>.
-      </p>
-      <p>
+        </p>
+        <br />
+        <p>
           Let's collaborate and <strong>harness the power of technology</strong> and data to drive success for your team. Drop me a message—I'm eager to connect and explore new possibilities.
-      </p>
+        </p>
       </div>
     </div>
   ),

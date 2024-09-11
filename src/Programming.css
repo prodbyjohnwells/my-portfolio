@@ -103,12 +103,17 @@
 
 /* Responsive design for medium screens (768px and smaller) */
 @media screen and (max-width: 768px) {
+  .programming-page {
+    max-width: 90%; /* Increase width on medium screens */
+  }
   .programming-title {
       font-size: 2em; /* Reduces title font size */
+      padding: 1px;
   }
 
   .projects-container {
       flex-direction: column; /* Stacks project cards vertically */
+      max-width: 1100px;
   }
 
   .project-card {
@@ -122,8 +127,17 @@
 
 /* Responsive design for small screens (480px and smaller) */
 @media screen and (max-width: 480px) {
+  .programming-page {
+    max-width: 95%; /* Increase width on smaller screens */
+  }
+
+  .projects-container {
+    max-width: 100%; /* Ensure full width for small screens */
+  }
+
   .programming-title {
       font-size: 1.75em; /* Further reduces title font size */
+      padding: 1px;
   }
 
   .project-card h2 {

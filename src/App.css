@@ -131,14 +131,20 @@ main {
 
 /* Responsive design for medium screens (768px and smaller) */
 @media screen and (max-width: 768px) {
+  .home-section::before {
+    top: 3%; /* Moves the gradient higher for medium screens */
+    height: calc(100% - 5%); /* Extends the gradient down further */
+  }
+
   .home-section {
-    max-width: 100%; /* Makes the home section fill the screen width */
-    padding: 1rem; /* Reduces padding on smaller screens */
+    padding-top: .1rem; /* Add more space above the title */
+    padding-bottom: .1rem; /* Add more space below the section */
   }
 
   .home-section .title {
     font-size: 1.8rem; /* Reduces the title size for medium screens */
     padding: 0 1.5rem; /* Adds padding around the title */
+    margin-bottom: 1rem;
   }
 
   .container {
@@ -175,5 +181,6 @@ main {
   .home-section .title {
     font-size: 1.5rem; /* Further reduces the title size for small screens */
     padding: 0 1.2rem; /* Reduces padding around the title */
+    padding-top: 3rem;
   }
 }
